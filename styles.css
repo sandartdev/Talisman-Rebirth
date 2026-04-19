@@ -237,15 +237,18 @@ header {
     color: var(--gray);
 }
 
-/* ============ SEÇÕES ============ */
+/* ============ ABOUT ============ */
 
-section {
+.about {
+    background: rgba(10, 14, 39, 0.8);
+    border-top: 3px solid var(--orange);
+    border-bottom: 3px solid var(--purple);
     max-width: 1200px;
     margin: 0 auto;
     padding: 80px 20px;
 }
 
-section h2 {
+.about h2 {
     font-size: 3.5rem;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -255,14 +258,6 @@ section h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-}
-
-/* ABOUT */
-
-.about {
-    background: rgba(10, 14, 39, 0.8);
-    border-top: 3px solid var(--orange);
-    border-bottom: 3px solid var(--purple);
 }
 
 .about p {
@@ -277,12 +272,26 @@ section h2 {
 
 .classes {
     background: rgba(10, 14, 39, 0.6);
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.classes h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--orange), var(--gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .carousel-wrapper {
     position: relative;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto 2rem;
 }
 
 .carousel {
@@ -290,7 +299,7 @@ section h2 {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 0 50px rgba(255, 107, 53, 0.4);
-    height: 400px;
+    height: 420px;
     background: linear-gradient(135deg, rgba(139, 46, 139, 0.4) 0%, rgba(255, 107, 53, 0.2) 100%);
     border: 3px solid var(--orange);
 }
@@ -314,7 +323,7 @@ section h2 {
 .carousel-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
     padding: 2rem;
@@ -328,34 +337,31 @@ section h2 {
     border-radius: 8px;
     box-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
     border: 2px solid var(--gold);
-    flex-shrink: 0;
 }
 
 .carousel-text {
-    width: 50%;
+    width: 45%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .carousel-text h3 {
     font-size: 2.5rem;
     color: var(--gold);
     text-shadow: 0 0 20px rgba(255, 107, 53, 0.6);
-    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .carousel-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--orange);
     font-weight: 600;
-    margin: 0;
 }
 
 .carousel-button {
@@ -420,6 +426,21 @@ section h2 {
     background: rgba(10, 14, 39, 0.8);
     border-top: 3px solid var(--orange);
     border-bottom: 3px solid var(--purple);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.shop h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--orange), var(--gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .shop-grid {
@@ -506,13 +527,28 @@ section h2 {
     box-shadow: 0 0 35px rgba(255, 107, 53, 0.8);
 }
 
-/* DOWNLOAD */
+/* ============ DOWNLOAD ============ */
 
 .download {
     background: linear-gradient(135deg, rgba(139, 46, 139, 0.4) 0%, rgba(255, 107, 53, 0.2) 100%);
     border-top: 3px solid var(--orange);
     border-bottom: 3px solid var(--purple);
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.download h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--orange), var(--gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .download p {
@@ -543,7 +579,7 @@ section h2 {
     box-shadow: 0 0 60px rgba(255, 107, 53, 1);
 }
 
-/* FOOTER */
+/* ============ FOOTER ============ */
 
 footer {
     background: linear-gradient(180deg, rgba(5, 7, 16, 0.95) 0%, rgba(5, 7, 16, 1) 100%);
@@ -553,7 +589,7 @@ footer {
     color: var(--gray);
 }
 
-/* RESPONSIVO */
+/* ============ RESPONSIVO ============ */
 
 @media (max-width: 1024px) {
     .carousel-button.prev {
@@ -573,7 +609,6 @@ footer {
 
     .carousel-content {
         flex-direction: column;
-        padding: 1.5rem;
         gap: 1.5rem;
     }
 
@@ -590,10 +625,6 @@ footer {
         font-size: 2rem;
     }
 
-    .carousel-text p {
-        font-size: 1rem;
-    }
-
     .hero-logo {
         height: 200px;
     }
@@ -602,78 +633,4 @@ footer {
         font-size: 1.2rem;
     }
 
-    .hero-buttons {
-        gap: 1rem;
-    }
-
-    .btn-play, .btn-purchase {
-        padding: 12px 40px;
-        font-size: 1rem;
-    }
-
-    .navbar {
-        gap: 1rem;
-    }
-
-    .navbar a {
-        font-size: 0.75rem;
-        padding: 0.3rem 0.5rem;
-    }
-
-    section h2 {
-        font-size: 2rem;
-    }
-
-    .header-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .navbar {
-        width: 100%;
-    }
-
-    .shop-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel {
-        height: auto;
-        min-height: 400px;
-    }
-
-    .carousel-image {
-        width: 100%;
-        height: 200px;
-    }
-
-    .carousel-text h3 {
-        font-size: 1.6rem;
-    }
-
-    .carousel-text p {
-        font-size: 0.9rem;
-    }
-
-    .carousel-button {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-    }
-
-    .carousel-button.prev {
-        left: 5px;
-    }
-
-    .carousel-button.next {
-        right: 5px;
-    }
-
-    .dot {
-        width: 10px;
-        height: 10px;
-        margin: 0 0.3rem;
-    }
-}
+    .hero*
