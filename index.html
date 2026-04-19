@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HEADER FIXO -->
     <header>
         <div class="header-container">
             <div class="logo-left">
                 <img src="logo2.png" alt="Logo" class="header-logo">
             </div>
-            
             <nav class="navbar">
                 <a href="#home">HOME</a>
                 <a href="#info">INFO</a>
@@ -26,7 +24,6 @@
         </div>
     </header>
 
-    <!-- HERO COM BACKGROUND -->
     <section id="hero" class="hero" style="background-image: url('background.png');">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -39,7 +36,6 @@
         </div>
     </section>
 
-    <!-- LATEST NEWS -->
     <section id="news-hero" class="news-hero">
         <h2>LATEST NEWS</h2>
         <div class="news-grid">
@@ -58,63 +54,49 @@
         </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="info" class="about">
         <h2>ABOUT THE GAME</h2>
         <p>Experience an epic adventure filled with magic, mystery, and unimaginable power. Join thousands of players in a world where legends are born and destinies are forged.</p>
     </section>
 
-    <!-- CLASSES CAROUSEL -->
+    <!-- CAROUSEL SECTION -->
     <section id="classes" class="classes">
         <h2>GAME CLASSES</h2>
-        <div id="classCarousel" class="carousel-container">
-            <div class="carousel-inner">
+        <div class="carousel-wrapper">
+            <div class="carousel" id="classCarousel">
                 <div class="carousel-item active">
-                    <div class="class-slide">
-                        <h3>🐉 TAMER</h3>
-                        <p>Master of creatures and control</p>
-                    </div>
+                    <h3>🐉 TAMER</h3>
+                    <p>Master of creatures and control</p>
                 </div>
                 <div class="carousel-item">
-                    <div class="class-slide">
-                        <h3>🗡️ ASSASSIN</h3>
-                        <p>Master of shadows and precision</p>
-                    </div>
+                    <h3>🗡️ ASSASSIN</h3>
+                    <p>Master of shadows and precision</p>
                 </div>
                 <div class="carousel-item">
-                    <div class="class-slide">
-                        <h3>🔥 WIZARD</h3>
-                        <p>Master of arcane magic</p>
-                    </div>
+                    <h3>🔥 WIZARD</h3>
+                    <p>Master of arcane magic</p>
                 </div>
                 <div class="carousel-item">
-                    <div class="class-slide">
-                        <h3>🧘 MONK</h3>
-                        <p>Master of inner strength</p>
-                    </div>
+                    <h3>🧘 MONK</h3>
+                    <p>Master of inner strength</p>
                 </div>
                 <div class="carousel-item">
-                    <div class="class-slide">
-                        <h3>✨ FAIRY</h3>
-                        <p>Master of nature and healing</p>
-                    </div>
+                    <h3>✨ FAIRY</h3>
+                    <p>Master of nature and healing</p>
                 </div>
             </div>
-
-            <button class="carousel-control prev" id="prevBtn">❮</button>
-            <button class="carousel-control next" id="nextBtn">❯</button>
-
-            <div class="carousel-indicators">
-                <span class="indicator active" data-index="0"></span>
-                <span class="indicator" data-index="1"></span>
-                <span class="indicator" data-index="2"></span>
-                <span class="indicator" data-index="3"></span>
-                <span class="indicator" data-index="4"></span>
-            </div>
+            <button class="carousel-button prev" onclick="moveCarousel(-1)">❮</button>
+            <button class="carousel-button next" onclick="moveCarousel(1)">❯</button>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </section>
 
-    <!-- SHOP -->
     <section id="shop" class="shop">
         <h2>SHOP</h2>
         <div class="shop-grid">
@@ -163,14 +145,12 @@
         </div>
     </section>
 
-    <!-- DOWNLOAD -->
     <section id="download" class="download">
         <h2>READY TO START?</h2>
         <p>Download now and join the adventure</p>
         <a href="#" class="btn-download">DOWNLOAD NOW</a>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 TALISMAN REBIRTH. All rights reserved.</p>
     </footer>
