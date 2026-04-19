@@ -1,9 +1,10 @@
+// ============ CAROUSEL FUNCTIONS ============
+
 let currentIndex = 0;
 
 function moveCarousel(direction) {
     const carousel = document.getElementById('classCarousel');
     const items = carousel.querySelectorAll('.carousel-item');
-    const dots = document.querySelectorAll('.dot');
     
     currentIndex += direction;
     
@@ -41,18 +42,21 @@ function showSlide(index) {
     });
 }
 
-// Auto-play carousel
+// Auto-play carousel every 5 seconds
 setInterval(() => {
     moveCarousel(1);
 }, 5000);
 
-// Smooth scroll
+// ============ SMOOTH SCROLL ============
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
+        if(target) {
             target.scrollIntoView({ behavior: 'smooth' });
         }
     });
 });
+
+console.log('🎮 Talisman Rebirth carregado com sucesso!');
