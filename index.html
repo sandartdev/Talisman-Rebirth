@@ -1,185 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talisman Rebirth</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo-left">
-                <img src="logo2.png" alt="Logo" class="header-logo">
-            </div>
-            <nav class="navbar">
-                <a href="#home">HOME</a>
-                <a href="#info">INFO</a>
-                <a href="#classes">CLASSES</a>
-                <a href="#shop">SHOP</a>
-                <a href="#download">DOWNLOAD</a>
-                <a href="#register" class="btn-register">REGISTER</a>
-                <a href="#login" class="btn-login">LOGIN</a>
-            </nav>
-        </div>
-    </header>
-
-    <section id="hero" class="hero" style="background-image: url('background.png');">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <img src="logo.png" alt="Logo Central" class="hero-logo">
-            <p>Unleash Your Inner Power</p>
-            <div class="hero-buttons">
-                <a href="#play" class="btn-play">PLAY NOW</a>
-                <a href="#purchase" class="btn-purchase">PURCHASE</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="news-hero" class="news-hero">
-        <h2>LATEST NEWS</h2>
-        <div class="news-grid">
-            <div class="news-card">
-                <h3>New Expansion!</h3>
-                <p>Explore new lands and unlock powerful abilities</p>
-            </div>
-            <div class="news-card">
-                <h3>Server Maintenance</h3>
-                <p>Servers will be down for maintenance on Friday</p>
-            </div>
-            <div class="news-card">
-                <h3>Dragon Event</h3>
-                <p>Face legendary dragons and claim epic rewards</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="info" class="about">
-        <h2>ABOUT THE GAME</h2>
-        <p>Experience an epic adventure filled with magic, mystery, and unimaginable power. Join thousands of players in a world where legends are born and destinies are forged.</p>
-    </section>
-
-    <!-- CAROUSEL SECTION -->
-    <section id="classes" class="classes">
-        <h2>GAME CLASSES</h2>
-        <div class="carousel-wrapper">
-            <div class="carousel" id="classCarousel">
-                <div class="carousel-item active">
-                    <div class="carousel-content">
-                        <img src="tamer.png" alt="Tamer" class="carousel-image">
-                        <div class="carousel-text">
-                            <h3>🐉 TAMER</h3>
-                            <p>Master of creatures and control</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-content">
-                        <img src="assassin.png" alt="Assassin" class="carousel-image">
-                        <div class="carousel-text">
-                            <h3>🗡️ ASSASSIN</h3>
-                            <p>Master of shadows and precision</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-content">
-                        <img src="wizard.png" alt="Wizard" class="carousel-image">
-                        <div class="carousel-text">
-                            <h3>🔥 WIZARD</h3>
-                            <p>Master of arcane magic</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-content">
-                        <img src="monk.png" alt="Monk" class="carousel-image">
-                        <div class="carousel-text">
-                            <h3>🧘 MONK</h3>
-                            <p>Master of inner strength</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-content">
-                        <img src="fairy.png" alt="Fairy" class="carousel-image">
-                        <div class="carousel-text">
-                            <h3>✨ FAIRY</h3>
-                            <p>Master of nature and healing</p>
-                        </div>
+<!-- CAROUSEL SECTION -->
+<section id="classes" class="classes">
+    <h2>GAME CLASSES</h2>
+    <div class="carousel-wrapper">
+        <div class="carousel" id="classCarousel">
+            <div class="carousel-item active">
+                <div class="carousel-content">
+                    <img src="https://raw.githubusercontent.com/sandartdev/Talisman-Rebirth/main/tamer.png" alt="Tamer" class="carousel-image">
+                    <div class="carousel-text">
+                        <h3>🐉 TAMER</h3>
+                        <p>Master of creatures and control</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-button prev" onclick="moveCarousel(-1)">❮</button>
-            <button class="carousel-button next" onclick="moveCarousel(1)">❯</button>
-        </div>
-        <div class="carousel-dots">
-            <span class="dot active" onclick="currentSlide(0)"></span>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-    </section>
-
-    <section id="shop" class="shop">
-        <h2>SHOP</h2>
-        <div class="shop-grid">
-            <div class="shop-item">
-                <div class="shop-item-header">💰</div>
-                <h3>Gold Bundle</h3>
-                <p class="price">$9.99</p>
-                <p>1,000 Gold + 100 Bonus Gold</p>
-                <button class="btn-buy">BUY NOW</button>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <img src="https://raw.githubusercontent.com/sandartdev/Talisman-Rebirth/main/assassin.png" alt="Assassin" class="carousel-image">
+                    <div class="carousel-text">
+                        <h3>🗡️ ASSASSIN</h3>
+                        <p>Master of shadows and precision</p>
+                    </div>
+                </div>
             </div>
-            <div class="shop-item">
-                <div class="shop-item-header premium">⭐</div>
-                <h3>Premium Bundle</h3>
-                <p class="price">$24.99</p>
-                <p>5,000 Gold + 1,000 Bonus Gold + Exclusive Skin</p>
-                <button class="btn-buy">BUY NOW</button>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <img src="https://raw.githubusercontent.com/sandartdev/Talisman-Rebirth/main/wizard.png" alt="Wizard" class="carousel-image">
+                    <div class="carousel-text">
+                        <h3>🔥 WIZARD</h3>
+                        <p>Master of arcane magic</p>
+                    </div>
+                </div>
             </div>
-            <div class="shop-item">
-                <div class="shop-item-header legendary">🔥</div>
-                <h3>Legendary Bundle</h3>
-                <p class="price">$49.99</p>
-                <p>15,000 Gold + 5,000 Bonus + 3 Legendary Skins</p>
-                <button class="btn-buy">BUY NOW</button>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <img src="https://raw.githubusercontent.com/sandartdev/Talisman-Rebirth/main/monk.png" alt="Monk" class="carousel-image">
+                    <div class="carousel-text">
+                        <h3>🧘 MONK</h3>
+                        <p>Master of inner strength</p>
+                    </div>
+                </div>
             </div>
-            <div class="shop-item">
-                <div class="shop-item-header">🎮</div>
-                <h3>Battle Pass</h3>
-                <p class="price">$9.99</p>
-                <p>Season Pass + Exclusive Rewards & Cosmetics</p>
-                <button class="btn-buy">BUY NOW</button>
-            </div>
-            <div class="shop-item">
-                <div class="shop-item-header">🛡️</div>
-                <h3>Armor Pack</h3>
-                <p class="price">$14.99</p>
-                <p>5 Exclusive Armor Sets + 500 Gold</p>
-                <button class="btn-buy">BUY NOW</button>
-            </div>
-            <div class="shop-item">
-                <div class="shop-item-header legendary">👑</div>
-                <h3>Ultimate Pack</h3>
-                <p class="price">$99.99</p>
-                <p>Everything Bundle + VIP Status for 1 Year</p>
-                <button class="btn-buy">BUY NOW</button>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <img src="https://raw.githubusercontent.com/sandartdev/Talisman-Rebirth/main/fairy.png" alt="Fairy" class="carousel-image">
+                    <div class="carousel-text">
+                        <h3>✨ FAIRY</h3>
+                        <p>Master of nature and healing</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-
-    <section id="download" class="download">
-        <h2>READY TO START?</h2>
-        <p>Download now and join the adventure</p>
-        <a href="#" class="btn-download">DOWNLOAD NOW</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 TALISMAN REBIRTH. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <button class="carousel-button prev" onclick="moveCarousel(-1)">❮</button>
+        <button class="carousel-button next" onclick="moveCarousel(1)">❯</button>
+    </div>
+    <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+</section>
